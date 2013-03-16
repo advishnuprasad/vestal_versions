@@ -63,7 +63,7 @@ module VestalVersions
         #
         # If no associated versions exist, the object is considered at version 1.
         def last_version
-          @last_version ||= versions.maximum(:number) || 1
+          @last_version ||= 1
         end
 
         # Clears the cached version number instance variables so that they can be recalculated.
